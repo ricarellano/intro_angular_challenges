@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html> <!-- add ng-app to the html tag here -->
+<html data-ng-app> <!-- add ng-app to the html tag here -->
 <head>
   <title>Challenge 1</title>
   <meta charset="utf8" />
@@ -10,7 +10,7 @@
   <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <!-- add Angular javascript here -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
   <script src="js/app.js"></script>
 </head>
 <body>
@@ -49,34 +49,34 @@
     <!--       the first one is done for you! -->
     <ol>
       <li>
-        <code>1 + 1</code> = {{ 1 + 1 }}
+        <code>{{ 1 + 1 }}</code> = {{ 1 + 1 }}
       </li>
       <li>
-        <code>2 + 2</code> = {{ "?" }}
+        <code>{{2 + 2}}</code> = {{ "?" }}
       </li>
       <li>
-        <code>"hello" + "world"</code> = {{ "?" }}
+        <code>{{"hello " + "world"}}</code> = {{ "?" }}
       </li>
       <li>
-        <code>"x marks the spot"[0]</code> = {{ "?" }}
+        <code>{{"x marks the spot"[0]}}</code> = {{ "?" }}
       </li>
       <li>
-        <code>"ANGULAR".toLowerCase()</code> = {{ "?" }}
+        <code>{{"ANGULAR".toLowerCase()}}</code> = {{ "?" }}
       </li>
       <li>
-        <code>["a","b","c"]</code> = {{ "?" }}
+        <code>{{["a","b","c"]}}</code> = {{ "?" }}
       </li>
       <li>
-        <code>["a","b","c"][2]</code> = {{ "?" }}
+        <code>{{["a","b","c"][2]}}</code> = {{ "?" }}
       </li>
       <li>
-        <code>true</code> = {{ "?" }}
+        <code>{{true}}</code> = {{ "?" }}
       </li>
       <li>
-        <code>nil</code> = {{ "?" }}
+        <code>{{nil}}</code> = {{ "?" }}
       </li>
       <li>
-        <code>null</code> = {{ "?" }}
+        <code>{{null}}</code> = {{ "?" }}
       </li>
       <li>
         <code>{key: "value"}</code> = {{ "?" }} <!-- be careful with syntax! -->
